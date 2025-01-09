@@ -11,24 +11,26 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #1a1a1a;
+      background: linear-gradient(to bottom, #1a1a1a, #2e2e2e);
       color: #f2f2f2;
       line-height: 1.6;
     }
     header {
-      background-color: #ff9900;
+      background: linear-gradient(to right, #ff9900, #e68a00);
       color: #1a1a1a;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 3em;
+      font-size: 3.5em;
       font-weight: 800;
+      animation: fadeIn 1.5s ease-in-out;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.5em;
       font-weight: 600;
+      margin-top: 10px;
     }
     section {
       padding: 60px 20px;
@@ -37,9 +39,11 @@
     }
     section h2 {
       color: #ff9900;
-      font-size: 2.5em;
+      font-size: 2.8em;
       font-weight: 800;
       margin-bottom: 20px;
+      text-align: center;
+      animation: slideIn 1s ease-in-out;
     }
     ul, ol {
       list-style: none;
@@ -47,8 +51,18 @@
     }
     ul li, ol li {
       margin: 15px 0;
-      font-size: 1.2em;
+      font-size: 1.3em;
       color: #cccccc;
+    }
+    ul li {
+      display: flex;
+      align-items: center;
+    }
+    ul li::before {
+      content: '✔';
+      color: #ff9900;
+      margin-right: 10px;
+      font-size: 1.2em;
     }
     .cta {
       text-align: center;
@@ -56,13 +70,14 @@
     }
     .cta a {
       display: inline-block;
-      padding: 15px 40px;
+      padding: 15px 50px;
       background-color: #ff9900;
       color: #1a1a1a;
       text-decoration: none;
       font-size: 1.5em;
       font-weight: 600;
       border-radius: 30px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s, background-color 0.3s;
     }
     .cta a:hover {
@@ -70,10 +85,17 @@
       transform: scale(1.05);
     }
     .testimonios {
-      background-color: #333333;
+      background: #2e2e2e;
       padding: 40px 20px;
       margin: 60px 0;
       text-align: center;
+      border-top: 1px solid #444;
+      border-bottom: 1px solid #444;
+    }
+    .testimonios h2 {
+      color: #ff9900;
+      font-size: 2.5em;
+      margin-bottom: 20px;
     }
     .testimonios p {
       font-size: 1.2em;
@@ -91,6 +113,16 @@
     footer p {
       margin: 0;
       font-size: 1em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
