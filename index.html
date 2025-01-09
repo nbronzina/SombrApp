@@ -5,39 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SombrApp - Tu Protector Térmico Urbano</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #1a1a1a;
+      color: #f2f2f2;
+      line-height: 1.6;
     }
     header {
-      background-color: #007BFF;
-      color: white;
-      padding: 20px;
+      background-color: #ff9900;
+      color: #1a1a1a;
+      padding: 40px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2em;
+      font-weight: 600;
     }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 1200px;
       margin: 0 auto;
     }
     section h2 {
-      color: #007BFF;
-      font-size: 2em;
+      color: #ff9900;
+      font-size: 2.5em;
+      font-weight: 800;
+      margin-bottom: 20px;
     }
-    ul {
+    ul, ol {
       list-style: none;
       padding: 0;
     }
-    ul li {
-      margin: 10px 0;
+    ul li, ol li {
+      margin: 15px 0;
       font-size: 1.2em;
+      color: #cccccc;
     }
     .cta {
       text-align: center;
@@ -45,23 +56,29 @@
     }
     .cta a {
       display: inline-block;
-      padding: 15px 30px;
-      background-color: #007BFF;
-      color: white;
+      padding: 15px 40px;
+      background-color: #ff9900;
+      color: #1a1a1a;
       text-decoration: none;
-      font-size: 1.2em;
-      border-radius: 5px;
-      transition: background-color 0.3s;
+      font-size: 1.5em;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: transform 0.3s, background-color 0.3s;
     }
     .cta a:hover {
-      background-color: #0056b3;
+      background-color: #e68a00;
+      transform: scale(1.05);
     }
     footer {
-      background-color: #333;
-      color: white;
+      background-color: #333333;
+      color: #f2f2f2;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 30px;
+      margin-top: 60px;
+    }
+    footer p {
+      margin: 0;
+      font-size: 1em;
     }
   </style>
 </head>
